@@ -57,6 +57,7 @@ public class ProxyServer {
 				//Generate http response and display it to user.
 				//ALMOST gets example website to work.
 				response.generateHTTPResponse(client);
+				client.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
